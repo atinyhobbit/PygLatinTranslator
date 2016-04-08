@@ -1,0 +1,18 @@
+# Welcome to my Pyg Latin Translator!
+# Kidding, it's a Pig Latin Translator, but it's built in
+# Python, so it's a Pyg Latin Translator.
+
+pyg = 'ay'
+
+# Here, the user will input a word.
+original = raw_input('Enter a word:')
+
+# Here, our Translator checks to see if there's actually
+# any characters there, and if there are numbers involved.
+if len(original) > 0 and original.isalpha():
+    word = original.lower() # We make the word lowercase.
+    first = word[0] # This stores the first letter.
+    new_word = word[1:] + first + pyg # We translate it!
+    print new_word
+else:
+    print 'Please enter a word.'
